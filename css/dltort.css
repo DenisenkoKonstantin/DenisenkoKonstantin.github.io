@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    font-size: 14px;
+    font-family: Aharoni;
+}
+.main {
+    min-width: 320px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    1height: 55px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    background: #ffffff;
+}
+@media(min-width: 0px) and (max-width: 1170px) {
+    .header {
+        width: auto;
+    }
+}
+.logo {
+    cursor: pointer;
+    margin-right: 25px;
+    font-size: 26px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+.logo p {
+    font-family: 'Chicle', cursive;
+    font-size: 18px;
+    margin: -5px 0 0 0;
+}
+.wrap-navigation {
+    display: flex;
+    align-items: center;
+
+}
+@media(min-width: 0px) and (max-width: 960px) {
+    .wrap-navigation {
+        display: none;
+    }
+}
+.navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.navigation li {
+    margin-right: 15px;
+    font-family: 'Charmonman', cursive;
+}
+.navigation a {
+    color: #808080;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navigation a:hover {
+    color: #a9a9a9;
+}
+.facebook {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url("../img/link-facebook.jpg") no-repeat 6px 4px ;
+}
+.facebook:hover {
+    background: url("../img/link-facebook-hover.jpg") no-repeat 6px 4px ;
+}
+.instagram {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url("../img/link-instagram.jpg") no-repeat 4px 4px;
+}
+.instagram:hover {
+    background: url("../img/link-instagram-hover.jpg") no-repeat 4px 4px;
+}
+.search {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url("../img/link-search.jpg") no-repeat 3px 4px;
+}
+.search:hover {
+    background: url("../img/link-search-hover.jpg") no-repeat 3px 4px;
+}
+.content {
+    width: 1100px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+@media(min-width: 0px) and (max-width: 1100px) {
+    .content {
+        width: auto;
+    }
+}
+.nav-mob {
+    margin-top: 7px;
+    height: 21px;
+}
+@media(min-width: 960px) and (max-width: 1920px) {
+    .nav-mob {
+        display: none;
+    }
+}
+.nav-mob span {
+    display: block;
+    margin-bottom: 5px;
+    width: 25px;
+    height: 2px;
+    background-color: #000000;
+}
+.nav-mob:hover {
+    cursor: pointer;
+}
+.first-img {
+    position: relative;
+    background: url("../img/first.jpg") no-repeat center center;
+    width: auto;
+    height: 308px;
+}
+.first-img img {
+    display: none;
+}
+@media(min-width: 0px) and (max-width: 960px) {
+    .first-img {
+        background: url("") no-repeat center center;
+        height: auto;
+    }
+    .first-img img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+.logo-down {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    text-align: center;
+    font-size: 28px;
+}
+.logo-down p {
+    margin: 0;
+}
+.logo-name {
+    font-size: 3vw;
+    font-family: 'Pacifico', cursive;
+}
+.logo-abbreviation {
+    font-family: 'Chicle', cursive;
+    font-size: 1.5vw;
+}
+.logo-description {
+    font-family: 'Charmonman', cursive;
+    color: #808080;
+    font-size: 1.5vw;
+}
+@media(min-width: 1280px) and (max-width: 1400px) {
+    .logo-down {
+        left: 15%;
+    }
+    .logo-name {
+        font-size: 3.5vw;
+    }
+    .logo-abbreviation {
+        font-size: 1.5vw;
+    }
+    .logo-description {
+        font-size: 2vw;
+    }
+}
+@media(min-width: 1000px) and (max-width: 1280px) {
+    .logo-down {
+        left: 12%;
+    }
+    .logo-name {
+        font-size: 4vw;
+    }
+    .logo-abbreviation {
+        font-size: 2vw;
+    }
+    .logo-description {
+        font-size: 2.5vw;
+    }
+}
+@media(min-width: 0px) and (max-width: 1000px) {
+    .logo-down {
+        left: 5%;
+    }
+    .logo-name {
+        font-size: 4vw;
+    }
+    .logo-abbreviation {
+        font-size: 2.5vw;
+    }
+    .logo-description {
+        font-size: 3vw;
+    }
+}
+@media(min-width: 0px) and (max-width: 320px) {
+    .logo-down {
+        left: 5%;
+    }
+    .logo-name {
+        font-size: 14px;
+    }
+    .logo-abbreviation {
+        font-size: 12px;
+    }
+    .logo-description {
+        font-size: 10px;
+    }
+}
+.about {
+    margin: 0 auto;
+    width: 700px;
+    font-size: 1.5vw;
+    font-family: 'Cormorant Infant', serif;
+    text-align: center;
+}
+@media(min-width: 0px) and (max-width: 700px) {
+    .about {
+        width: auto;
+        padding: 0 5%;
+    }
+}
+@media(min-width: 0px) and (max-width: 1100px) {
+    .about {
+        font-size: 2vw;
+    }
+}
+@media(min-width: 0px) and (max-width: 800px) {
+    .about {
+        font-size: 3vw;
+    }
+}
+@media(min-width: 0px) and (max-width: 600px) {
+    .about {
+        font-size: 18px;
+        padding: 0 10%;
+    }
+}
+.about-logo {
+    display: inline-block;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+}
+.about-text {
+    display: inline-block;
+    margin: 0;
+}
