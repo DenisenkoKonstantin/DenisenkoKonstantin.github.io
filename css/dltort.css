@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
     font-family: Aharoni;
 }
 .main {
@@ -10,7 +10,6 @@ body {
     display: flex;
     justify-content: space-between;
     width: 1100px;
-    1height: 55px;
     margin: 0 auto;
     padding: 10px 30px;
     background: #ffffff;
@@ -88,12 +87,15 @@ body {
     background: url("../img/link-search-hover.jpg") no-repeat 3px 4px;
 }
 .content {
+
+}
+.content_wrapper {
     width: 1100px;
     min-width: 320px;
     margin: 0 auto;
 }
 @media(min-width: 0px) and (max-width: 1100px) {
-    .content {
+    .content_wrapper {
         width: auto;
     }
 }
@@ -217,31 +219,19 @@ body {
 }
 .about {
     margin: 0 auto;
-    width: 700px;
-    font-size: 1.5vw;
+    padding: 0 200px;
+    font-size: 28px;
     font-family: 'Cormorant Infant', serif;
     text-align: center;
 }
-@media(min-width: 0px) and (max-width: 700px) {
+@media(min-width: 800px) and (max-width: 1100px) {
     .about {
-        width: auto;
-        padding: 0 5%;
-    }
-}
-@media(min-width: 0px) and (max-width: 1100px) {
-    .about {
-        font-size: 2vw;
+        padding: 0 100px;
     }
 }
 @media(min-width: 0px) and (max-width: 800px) {
     .about {
-        font-size: 3vw;
-    }
-}
-@media(min-width: 0px) and (max-width: 600px) {
-    .about {
-        font-size: 18px;
-        padding: 0 10%;
+        padding: 0 50px;
     }
 }
 .about-logo {
@@ -252,4 +242,133 @@ body {
 .about-text {
     display: inline-block;
     margin: 0;
+    padding: 30px 0;
+}
+.custom_cakes {
+    background: #f5f5f5;
+}
+.custom_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+@media(min-width: 0px) and (max-width: 950px) {
+    .custom_wrapper {
+        display: block;
+    }
+}
+.custom_img {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 100px;
+}
+@media(min-width: 0px) and (max-width: 950px) {
+    .custom_img {
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+    }
+}
+.custom_text {
+    padding: 0 20px 0 0;
+}
+@media(min-width: 0px) and (max-width: 950px) {
+    .custom_text {
+        padding: 0 50px;
+        text-align: center;
+    }
+}
+.custom_text h2 {
+    font-family: 'Cormorant Infant', serif;
+    font-size: 34px;
+    margin: 80px 0 25px 0;
+    text-align: center;
+}
+.custom_text p {
+    margin: 0 0 30px 0;
+    font-family: 'Cormorant Infant', serif;
+    font-size: 22px;
+    text-align: center;
+}
+.custom_text a {
+    color: #daa520;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: all 0.25s;
+}
+.custom_text a:hover {
+    color: #00bfff;
+}
+.custom_btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 0.7em 1em;
+    margin: 0 0 35px 0;
+    font-size: .923em;
+    font-weight: 400;
+    border: 0;
+    cursor: pointer;
+    line-height: 1.65;
+    border-radius: 5px;
+    transition: all 0.25s;
+}
+.custom_btn:hover {
+    background: #555;
+}
+.location h2 {
+    text-align: center;
+    font-family: 'Cormorant Infant', serif;
+    font-size: 32px;
+}
+.location p {
+    text-align: center;
+    font-family: 'Cormorant Infant', serif;
+    font-size: 24px;
+}
+.location_wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+}
+@media(min-width: 700px) and (max-width: 950px) {
+    .location_wrapper {
+        padding: 0 100px;
+    }
+}
+@media(min-width: 0px) and (max-width: 750px) {
+    .location_wrapper {
+        padding: 0 50px;
+        display: block;
+    }
+}
+.location_str img {
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.location_str {
+    text-align: center;
+    padding: 0 20px;
+}
+@media(min-width: 0px) and (max-width: 750px) {
+    .location_str {
+        margin-bottom: 50px;
+    }
+}
+.location_str img {
+    margin-bottom: 20px;
+}
+.location_str strong {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.location_str p {
+    margin: 0 0 20px 0;
+}
+.location_str a {
+    text-decoration: none;
+    font-family: 'Cormorant Infant', serif;
+    font-size: 22px;
+    color: #daa520;
 }
