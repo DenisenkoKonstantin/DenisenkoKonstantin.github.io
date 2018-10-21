@@ -16,8 +16,6 @@ body {
     justify-content: space-between;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
-    width: 1100px;
-    margin: 0 auto;
     padding: 10px 30px;
     background: #ffffff;
 }
@@ -25,6 +23,17 @@ body {
     .header {
         width: auto;
     }
+}
+.flex_wrapper {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
 }
 .logo {
     display: block;
@@ -107,15 +116,11 @@ body {
 .search:hover {
     background: url("../img/link-search-hover.jpg") no-repeat 3px 4px;
 }
-.content {
-
-}
 .content_wrapper {
     width: 1100px;
-    min-width: 320px;
     margin: 0 auto;
 }
-@media(min-width: 0px) and (max-width: 1100px) {
+@media(min-width: 0px) and (max-width: 1180px) {
     .content_wrapper {
         width: auto;
     }
@@ -239,7 +244,6 @@ body {
     }
 }
 .about {
-    margin: 0 auto;
     padding: 0 200px;
     font-size: 28px;
     font-family: 'Cormorant Infant', serif;
@@ -263,25 +267,19 @@ body {
 .about-text {
     display: inline-block;
     margin: 0;
-    padding: 30px 0;
+    padding: 70px 0;
 }
 .custom_cakes {
     background: #f5f5f5;
+    margin-bottom: 80px;
 }
-.custom_wrapper {
-    display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
+.custom_cakes_wrapper {
+    width: 1300px;
+    margin: 0 auto;
 }
-@media(min-width: 0px) and (max-width: 950px) {
-    .custom_wrapper {
-        display: block;
+@media (min-width: 0px) and (max-width: 1320px) {
+    .custom_cakes_wrapper {
+        width: auto;
     }
 }
 .custom_img {
@@ -293,25 +291,26 @@ body {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    margin-right: 100px;
+    margin-right: 250px;
 }
-@media(min-width: 0px) and (max-width: 950px) {
+@media(min-width: 0px) and (max-width: 1180px) {
     .custom_img {
-        display: flex;
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        margin-right: 0;
+        margin: 0 50px 0 0;
     }
 }
 .custom_text {
     padding: 0 20px 0 0;
 }
 @media(min-width: 0px) and (max-width: 950px) {
+    .custom_wrapper {
+        display: block;
+    }
+    .custom_img {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-right: 0;
+    }
     .custom_text {
         padding: 0 50px;
         text-align: center;
@@ -320,7 +319,7 @@ body {
 .custom_text h2 {
     font-family: 'Cormorant Infant', serif;
     font-size: 34px;
-    margin: 80px 0 25px 0;
+    margin: 60px 0 25px 0;
     text-align: center;
 }
 .custom_text p {
@@ -359,27 +358,23 @@ body {
 .custom_btn:hover {
     background: #555;
 }
+.location {
+    margin-bottom: 80px;
+}
 .location h2 {
+    margin: 0;
     text-align: center;
     font-family: 'Cormorant Infant', serif;
     font-size: 32px;
 }
 .location p {
+    margin: 0 0 25px 0;
     text-align: center;
     font-family: 'Cormorant Infant', serif;
     font-size: 24px;
 }
 .location_wrapper {
-    display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    padding: 0 150px;
+    padding: 0 80px;
 }
 @media(min-width: 700px) and (max-width: 950px) {
     .location_wrapper {
@@ -422,4 +417,18 @@ body {
     font-family: 'Cormorant Infant', serif;
     font-size: 22px;
     color: #daa520;
+}
+.about-myself-text {
+    padding: 0 0 0 20px;
+}
+.about-myself-img {
+    margin: 0 0 0 250px;
+}
+@media(min-width: 0px) and (max-width: 1180px) {
+    .about-myself-img {
+        margin: 0 0 0 50px;
+    }
+}
+.about-myself-img img {
+    padding-right: 20px;
 }
