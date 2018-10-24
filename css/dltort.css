@@ -146,7 +146,7 @@ body {
 }
 .first-img {
     position: relative;
-    background: url("../img/first.jpg") no-repeat center center;
+    background: url("../img/banner.jpg") no-repeat center center;
     width: auto;
     height: 308px;
 }
@@ -418,6 +418,9 @@ body {
     font-size: 22px;
     color: #daa520;
 }
+.about-myself {
+    background: #f5f5f5;
+}
 .about-myself-text {
     padding: 0 0 0 20px;
 }
@@ -431,4 +434,68 @@ body {
 }
 .about-myself-img img {
     padding-right: 20px;
+}
+.preview-gallery {
+    padding: 80px 250px;
+}
+.preview-gallery-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+@media(min-width: 0px) and (max-width: 1100px) {
+    .preview-gallery-wrapper {
+        display: none;
+    }
+    .preview-gallery {
+        padding: 0;
+        margin-bottom: 80px;
+    }
+}
+.preview-bottom {
+    margin-bottom: 25px;
+}
+.preview-img {
+    position: relative;
+    margin: 0;
+}
+.preview-gallery img {
+    width: 252px;
+    height: 252px;
+}
+.preview-visible {
+    position: relative;
+    z-index: 1;
+}
+.preview-invisible {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+.preview-img:hover .preview-invisible {
+    opacity: 1;
+}
+.footer {
+    background: #2a2a2a;
+    color: #767676;
+}
+.footer-contact {
+    padding: 50px;
+}
+.footer-contact h4 {
+    margin: 0 0 20px 0;
+    color: #ffffff;
+}
+.footer-contact-line {
+    margin-bottom: 15px;
+}
+.favicon {
+    display: inline-block;
+    width: 13px;
+    height: 18px;
+    background: url("../img/favicon/fa-map.png");
 }
