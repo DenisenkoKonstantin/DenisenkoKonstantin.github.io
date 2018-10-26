@@ -93,28 +93,28 @@ body {
     display: block;
     width: 25px;
     height: 25px;
-    background: url("../img/link-facebook.jpg") no-repeat 6px 4px ;
+    background: url("../img/favicon/link-facebook.jpg") no-repeat 6px 4px ;
 }
 .facebook:hover {
-    background: url("../img/link-facebook-hover.jpg") no-repeat 6px 4px ;
+    background: url("../img/favicon/link-facebook-hover.jpg") no-repeat 6px 4px ;
 }
 .instagram {
     display: block;
     width: 25px;
     height: 25px;
-    background: url("../img/link-instagram.jpg") no-repeat 4px 4px;
+    background: url("../img/favicon/link-instagram.jpg") no-repeat 4px 4px;
 }
 .instagram:hover {
-    background: url("../img/link-instagram-hover.jpg") no-repeat 4px 4px;
+    background: url("../img/favicon/link-instagram-hover.jpg") no-repeat 4px 4px;
 }
 .search {
     display: block;
     width: 25px;
     height: 25px;
-    background: url("../img/link-search.jpg") no-repeat 3px 4px;
+    background: url("../img/favicon/link-search.jpg") no-repeat 3px 4px;
 }
 .search:hover {
-    background: url("../img/link-search-hover.jpg") no-repeat 3px 4px;
+    background: url("../img/favicon/link-search-hover.jpg") no-repeat 3px 4px;
 }
 .content_wrapper {
     width: 1100px;
@@ -436,23 +436,42 @@ body {
     padding-right: 20px;
 }
 .preview-gallery {
-    padding: 80px 250px;
-}
-.preview-gallery-wrapper {
+    padding: 80px 0 60px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
-@media(min-width: 0px) and (max-width: 1100px) {
-
-    .preview-gallery {
-        padding: 0;
-        margin-bottom: 80px;
+.preview-gallery figure {
+    margin: 0 70px;
+}
+@media(min-width: 0px) and (max-width: 1600px) {
+    .preview-gallery figure {
+        margin: 0;
+    }
+    .figure8 {
+        display: none;
+    }
+    .figure7 {
+        display: none;
+    }
+    .figure6 {
+        display: none;
+    }
+    .figure5 {
+        display: none;
     }
 }
-.preview-bottom {
-    margin-bottom: 25px;
+@media(min-width: 880px) and (max-width: 1100px) {
+    .preview-gallery {
+        padding: 80px 170px 60px;
+    }
 }
-.preview-img {
+@media(min-width: 0px) and (max-width: 880px) {
+    .preview-gallery {
+        padding: 80px 70px 60px;
+    }
+}
+figure {
     position: relative;
     margin: 0;
 }
@@ -463,6 +482,7 @@ body {
 .preview-visible {
     position: relative;
     z-index: 1;
+    margin-bottom: 20px;
 }
 .preview-invisible {
     position: absolute;
@@ -474,26 +494,131 @@ body {
     -o-transition: opacity 0.5s;
     transition: opacity 0.5s;
 }
-.preview-img:hover .preview-invisible {
+figure:hover .preview-invisible {
     opacity: 1;
 }
 .footer {
+    padding: 20px 0 50px;
     background: #2a2a2a;
     color: #767676;
 }
+.footer-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+@media(min-width: 0px) and (max-width: 1100px) {
+    .footer-wrapper {
+        display: block;
+        text-align: center;
+    }
+    .footer-contact {
+        display: inline-block;
+    }
+    .footer-instagram {
+        display: inline-block;
+    }
+}
 .footer-contact {
-    padding: 50px;
+    width: 300px;
+    padding: 30px 10px;
+    font-family: 'Quicksand', sans-serif;
 }
 .footer-contact h4 {
     margin: 0 0 20px 0;
     color: #ffffff;
 }
 .footer-contact-line {
+    width: 300px;
     margin-bottom: 15px;
+    position: relative;
 }
-.favicon {
+.footer-location {
+    display: inline-block;
+    margin: 0 0 0 35px;
+}
+.footer-fa-map {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: inline-block;
     width: 13px;
     height: 18px;
-    background: url("../img/favicon/fa-map.png");
+    background: url("../img/favicon/fa-map.png") no-repeat;
+}
+.footer-tel {
+    color: #767676;
+    text-decoration: none;
+}
+.footer-tel:hover {
+    color: #ffffff;
+}
+.footer-tel:before {
+    content: " ";
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+    background: url("../img/favicon/fa-tel.png") no-repeat;
+    margin-right: 15px;
+}
+.footer-mail {
+    color: #767676;
+    text-decoration: none;
+}
+.footer-mail:hover {
+    color: #ffffff;
+}
+.footer-mail:before {
+    content: " ";
+    display: inline-block;
+    width: 22px;
+    height: 16px;
+    background: url("../img/favicon/fa-mail.png") no-repeat;
+    margin-right: 10px;
+}
+.footer-map {
+    padding: 30px 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+.footer-map p {
+    margin: 0 0 20px 0;
+    color: #ffffff;
+}
+.footer-instagram {
+    margin: 0;
+    padding: 30px 10px;
+    font-family: 'Quicksand', sans-serif;
+    color: #ffffff;
+}
+.footer-dltort {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.footer-instagram a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer-instagram a:hover {
+    color: #00bfff;
+}
+.footer-instagram-img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-instagram-img a {
+    display: block;
+    height: 77px;
+    margin-right: 10px;
+}
+.footer-instagram-img a:hover {
+    opacity: .8;
+}
+.footer-bottom {
+    height: 40px;
+    background: #363636;
 }
