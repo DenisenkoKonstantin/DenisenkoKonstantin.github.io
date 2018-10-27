@@ -627,3 +627,81 @@ figure:hover .preview-invisible {
     height: 40px;
     background: #363636;
 }
+.mob-side-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100%;
+    background: #2a2a2a;
+    color: #767676;
+    font-family: 'Cormorant Infant', serif;
+}
+.mob-menu-hidden {
+    border-bottom: 1px solid #323232;
+}
+.mob-menu-hidden a {
+    display: inline-block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.15s ease-in-out;
+}
+.mob-menu-hidden a:hover {
+    color: #ffffff;
+}
+.side-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: rgb(42, 42, 42);
+}
+.side-menu a {
+    display: block;
+    height: 100%;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.15s ease-in-out;
+}
+.side-menu-a:hover {
+    color: #ffffff;
+}
+.side-menu-li {
+    border-bottom: 1px solid #323232;
+}
+.fa-side-arrow span {
+    display: inline-block;
+    width: 8px;
+    height: 11px;
+    margin-left: 250px;
+    background: url("../img/favicon/fa-side-arrow.png") no-repeat;
+    transition: all 0.15s ease-in-out;
+}
+.fa-side-arrow:hover span {
+    background: url("../img/favicon/fa-side-arrow-active.png") no-repeat;
+}
+.fa-side-facebook {
+    text-indent: -999999px;
+    background: url("../img/favicon/fa-side-facebook.png") no-repeat 20px 20px;
+}
+.side-menu-li:hover .fa-side-facebook{
+    background: url("../img/favicon/fa-side-facebook-active.png") no-repeat 20px 20px;
+}
+.fa-side-instagram {
+    text-indent: -999999px;
+    background: url("../img/favicon/fa-side-instagram.png") no-repeat 20px 20px;
+}
+.side-menu-li:hover .fa-side-instagram{
+    background: url("../img/favicon/fa-side-instagram-active.png") no-repeat 20px 20px;
+}
+.inside-menu {
+    1display: none;
+    background: rgba(255,255,255,0.02);
+}
+.inside-menu-li {
+    border-bottom: 1px solid rgba(255,255,255,0.035);
+}
+.inside-menu-li:hover {
+    color: #ffffff;
+}
