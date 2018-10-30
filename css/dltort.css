@@ -89,6 +89,9 @@ body {
 .navigation a:hover {
     color: #a9a9a9;
 }
+.header-nav-menu {
+
+}
 .facebook {
     display: block;
     width: 25px;
@@ -630,8 +633,9 @@ figure:hover .preview-invisible {
 .mob-side-menu {
     position: absolute;
     top: 0;
-    right: 0;
-    width: 350px;
+    right: -320px;
+    transition: all 0.15s ease-in-out;
+    width: 320px;
     height: 100%;
     background: #2a2a2a;
     color: #767676;
@@ -642,7 +646,7 @@ figure:hover .preview-invisible {
 }
 .mob-menu-hidden a {
     display: inline-block;
-    padding: 20px 20px;
+    padding: 17px 20px;
     text-decoration: none;
     color: inherit;
     transition: all 0.15s ease-in-out;
@@ -659,7 +663,7 @@ figure:hover .preview-invisible {
 .side-menu a {
     display: block;
     height: 100%;
-    padding: 20px 20px;
+    padding: 17px 20px;
     text-decoration: none;
     color: inherit;
     transition: all 0.15s ease-in-out;
@@ -674,7 +678,7 @@ figure:hover .preview-invisible {
     display: inline-block;
     width: 8px;
     height: 11px;
-    margin-left: 250px;
+    margin-left: 225px;
     background: url("../img/favicon/fa-side-arrow.png") no-repeat;
     transition: all 0.15s ease-in-out;
 }
@@ -696,12 +700,78 @@ figure:hover .preview-invisible {
     background: url("../img/favicon/fa-side-instagram-active.png") no-repeat 20px 20px;
 }
 .inside-menu {
-    1display: none;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.15s ease-in-out;
     background: rgba(255,255,255,0.02);
 }
 .inside-menu-li {
     border-bottom: 1px solid rgba(255,255,255,0.035);
 }
+.side-menu-li .inside-menu-a {
+    padding: 12px 25px;
+}
+.inside-menu-a:before {
+    content: "-";
+    display: inline-block;
+    margin: 0 10px;
+}
 .inside-menu-li:hover {
     color: #ffffff;
+}
+.opacity-main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(42, 42, 42);;
+    opacity: 0.7;
+}
+.sider-form {
+    position: relative;
+    margin: 30px 20px 0;
+
+}
+.sider-form input {
+    width: 100%;
+    padding: 15px 45px 5px 0;
+    background: none;
+    border: 0;
+    outline: 0;
+    line-height: 2;
+    border-color: rgba(255,255,255,0.2);
+    border-bottom-width: 1px;
+    border-style: solid;
+    transition: all 0.3s;
+    color: inherit;
+    font-size: 16px;
+}
+.sider-form input::-ms-clear {
+    display: none;
+}
+.sider-form input:hover {
+    border-color: #ffffff;
+}
+.sider-form input:focus {
+    border-color: #ffffff;
+}
+.side-button {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.fa-side-search {
+    display: inline-block;
+}
+.fa-side-search:before {
+    display: inline-block;
+    content: " ";
+    width: 15px;
+    height: 14px;
+    background: url("../img/favicon/fa-side-search.png");
 }
