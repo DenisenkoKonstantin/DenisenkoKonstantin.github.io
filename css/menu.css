@@ -1,0 +1,36 @@
+.page-2 .first-img {
+    display: block;
+    background: url("../img/menu.png") center center;
+    background-size: cover;
+    width: auto;
+    height: 300px;
+}
+@media(min-width: 0px) and (max-width: 960px) {
+    .page-2 .first-img {
+        background: url("../img/menu.png") center center;
+        width: auto;
+        height: 200px;
+    }
+}
+.page2-menu img {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 20px 0;
+}
+.page2-menu-center {
+    text-align: center;
+    cursor: pointer;
+}
+.page2-menu-center span {
+    text-align: center;
+    display: block;
+    font-weight: 600;
+    color: #c5a47e;
+
+}
+@media(min-width: 0px) and (max-width: 750px) {
+    .page2-menu {
+        flex-direction: column;
+    }
+}

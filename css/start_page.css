@@ -7,6 +7,7 @@ body {
     min-width: 320px;
 }
 .header {
+    position: relative;
     display: flex;
     display: -webkit-box;
     display: -moz-box;
@@ -78,11 +79,11 @@ body {
     display: -webkit-flex;
 }
 .navigation li {
-    margin-right: 15px;
+    margin-right: 12px;
     padding: 5px 0;
 }
 .navigation a {
-    color: #808080;
+    color: #444444;
     text-decoration: none;
     font-weight: bold;
 }
@@ -204,6 +205,54 @@ body {
 }
 .nav-mob:hover {
     cursor: pointer;
+}
+.header-search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -999;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    transition: all 0.25s ease-in-out;
+}
+.show-header-form {
+    opacity: 1;
+    z-index: 2;
+}
+.header-form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.header-form input {
+    height: 100%;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #a9a9a9;
+    padding: 0;
+}
+.header-span-close {
+    text-indent: -999999px;
+    position: absolute;
+    right: 0;
+    top: 30%;
+    width: 16px;
+    height: 16px;
+    background: url("../img/favicon/fa-form-close.png") no-repeat;
+    transition: all 0.15s ease-in-out;
+}
+.header-span-close:hover {
+    background: url("../img/favicon/fa-form-close-active.png") no-repeat;
+    cursor: pointer;
+}
+.header-form-btn {
+    display: none;
 }
 .first-img {
     position: relative;
@@ -685,7 +734,7 @@ figure:hover .preview-invisible {
     background: #363636;
 }
 .mob-side-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -320px;
     transition: all 0.15s ease-in-out;
