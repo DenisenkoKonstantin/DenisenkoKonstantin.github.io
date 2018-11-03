@@ -584,16 +584,16 @@ figure {
     position: relative;
     margin: 0;
 }
-.preview-gallery img {
+.preview-visible {
     width: 252px;
     height: 252px;
-}
-.preview-visible {
     position: relative;
     z-index: 1;
     margin-bottom: 20px;
 }
 .preview-invisible {
+    width: 252px;
+    height: 252px;
     position: absolute;
     top: 0;
     left: 0;
@@ -830,11 +830,11 @@ figure:hover .preview-invisible {
     left: 0;
     background: rgb(42, 42, 42);;
     opacity: 0.7;
+    transition: all 0.15s ease-in-out;
 }
 .sider-form {
     position: relative;
     margin: 30px 20px 0;
-
 }
 .sider-form input {
     width: 100%;
