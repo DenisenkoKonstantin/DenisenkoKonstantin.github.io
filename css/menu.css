@@ -16,15 +16,22 @@
     border-bottom: 1px solid #eaeaea;
     margin-bottom: 80px;
 }
+.page2-menu a {
+    text-decoration: none;
+}
 .page2-menu img {
     display: inline-block;
     width: auto;
     height: auto;
     padding: 20px 0;
 }
+.custom-jpg {
+    border-radius: 40%;
+}
 .page2-menu-center {
     text-align: center;
     cursor: pointer;
+    margin: 0 25px;
 }
 .page2-menu-center span {
     text-align: center;
