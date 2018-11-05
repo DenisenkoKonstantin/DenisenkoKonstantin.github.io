@@ -1,17 +1,3 @@
-.page-3 .first-img {
-    display: block;
-    background: url("../img/menu.png") center center;
-    background-size: cover;
-    width: auto;
-    height: 300px;
-}
-@media(min-width: 0px) and (max-width: 960px) {
-    .page-3 .first-img {
-        background: url("../img/menu.png") center center;
-        width: auto;
-        height: 200px;
-    }
-}
 .page-4 .cake-span {
     color: #c5a47e;
 }
@@ -20,4 +6,13 @@
 }
 .page-4 .custom-span {
     color: #444444;
+}
+.page-4 .myworks-figure {
+    align-self: flex-end
+}
+.page-4 .preview-visible {
+    height: auto;
+}
+.page-4 .preview-invisible {
+    height: auto;
 }

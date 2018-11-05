@@ -1,14 +1,14 @@
 .page-3 .first-img {
-     display: block;
-     background: url("../img/menu.png") center center;
-     background-size: cover;
-     width: auto;
-     height: 300px;
- }
+    position: relative;
+    background: url("../img/weddingbanner.png") no-repeat center center;
+    background-size: cover;
+    width: auto;
+    height: 600px;
+}
 @media(min-width: 0px) and (max-width: 960px) {
     .page-3 .first-img {
-        background: url("../img/menu.png") center center;
-        width: auto;
+        background: url("../img/weddingbanner2.png") no-repeat center center;
+        background-size: cover;
         height: 200px;
     }
 }
@@ -17,4 +17,13 @@
 }
 .page-3 .wedding-span {
     color: #444444;
+}
+.page-3 .myworks-figure {
+    align-self: flex-end
+}
+.page-3 .preview-visible {
+    height: auto;
+}
+.page-3 .preview-invisible {
+    height: auto;
 }
