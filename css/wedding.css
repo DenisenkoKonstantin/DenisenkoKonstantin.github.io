@@ -27,3 +27,9 @@
 .page-3 .preview-invisible {
     height: auto;
 }
+.page-3 .wedding-price {
+    background: #f5f5f5;
+}
+.page-3 .wedding-looklike-box {
+    align-self: flex-end;
+}
