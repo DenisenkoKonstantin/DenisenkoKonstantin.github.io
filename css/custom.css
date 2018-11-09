@@ -7,6 +7,14 @@
 .page-4 .custom-span {
     color: #444444;
 }
+.myworks-img {
+    margin-bottom: 50px;
+}
+.myworks-p {
+    margin: 0 0 50px 0;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #eaeaea;
+}
 .page-4 .myworks-figure {
     align-self: flex-end
 }

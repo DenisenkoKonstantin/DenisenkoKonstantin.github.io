@@ -1,0 +1,27 @@
+.page-6 .first-img {
+    display: block;
+    background: url("../img/order.png") center center;
+    background-size: cover;
+    width: auto;
+    height: 300px;
+    margin-bottom: 50px;
+}
+@media(min-width: 0px) and (max-width: 960px) {
+    .page-6 .first-img {
+        background: url("../img/order.png") center center;
+        width: auto;
+        height: 200px;
+    }
+}
+.page-6 .candybar-link {
+    text-decoration: none;
+    color: #c5a47e;
+}
+.page-6 .candybar-link:hover {
+    color: #4b0082;
+}
+@media(min-width: 0px) and (max-width: 1024px) {
+    .page-6 .content {
+        padding: 0 25px;
+    }
+}

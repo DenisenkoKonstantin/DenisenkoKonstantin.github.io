@@ -27,9 +27,46 @@
 .page-3 .preview-invisible {
     height: auto;
 }
+.page-3 .page2-menu {
+    margin-bottom: 50px;
+}
+.page-3 .wedding-description {
+    margin-bottom: 50px;
+}
+.page-3 .wedding-description h2 {
+    margin: 0 0 25px 0;
+}
+.page-3 .wedding-description p {
+    margin: 0;
+}
+.page-3 .wedding-price {
+    padding: 50px 0;
+}
+.page-3 .wedding-price-headline {
+    margin: 0 0 25px 0;
+}
+.page-3 .wedding-price-p {
+    margin: 0 0 50px 0;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #eaeaea;
+}
+.page-3 .candybar-link {
+    text-decoration: none;
+    color: #c5a47e;
+}
+.page-3 .candybar-link:hover {
+    color: #4b0082;
+}
+.wedding-price-p2 {
+    margin-bottom: 50px;
+}
 .page-3 .wedding-price {
     background: #f5f5f5;
+}
+.page-3 .wedding-looklike {
+    padding: 0;
 }
 .page-3 .wedding-looklike-box {
     align-self: flex-end;
 }
+

@@ -141,6 +141,7 @@ body {
 .header-nav-menu .header-nav-inside-li {
     padding: 0;
     margin: 0;
+    width: 175px;
 }
 .header-nav-inside-a {
     display: block;
@@ -550,6 +551,13 @@ body {
 }
 .about-myself-img img {
     padding-right: 20px;
+}
+.page-1 .candybar-link {
+    text-decoration: none;
+    color: #c5a47e;
+}
+.page-1 .candybar-link:hover {
+    color: #4b0082;
 }
 .preview-gallery {
     padding: 80px 0 60px;

@@ -1,0 +1,15 @@
+.page-7 .first-img {
+    display: block;
+    background: url("../img/aboutus.png") center center;
+    background-size: cover;
+    width: auto;
+    height: 300px;
+    margin-bottom: 50px;
+}
+@media(min-width: 0px) and (max-width: 960px) {
+    .page-7 .first-img {
+        background: url("../img/aboutus.png") center center;
+        width: auto;
+        height: 200px;
+    }
+}
