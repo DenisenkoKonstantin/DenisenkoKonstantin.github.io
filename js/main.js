@@ -37,7 +37,7 @@ function mobMenuHidden() {
 
 function sideMenuLi() {
     if (insideMenu.style.height === "0px") {
-        insideMenu.style.height = 367 + "px";
+        insideMenu.style.height = 275 + "px";
     }else {
         insideMenu.style.height = 0;
     };

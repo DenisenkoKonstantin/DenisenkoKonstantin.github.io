@@ -12,11 +12,6 @@
         height: 200px;
     }
 }
-@media(min-width: 0px) and (max-width: 1220px) {
-    .page-4 .content_wrapper {
-        padding: 0 25px;
-    }
-}
 .page-4 .cake-span {
     color: #c5a47e;
 }
