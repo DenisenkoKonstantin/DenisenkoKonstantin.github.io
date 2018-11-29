@@ -3,13 +3,21 @@
     background: url("../img/weddingbanner.png") no-repeat center center;
     background-size: cover;
     width: auto;
-    height: 600px;
+    height: 420px;
 }
 @media(min-width: 0px) and (max-width: 960px) {
     .page-3 .first-img {
         background: url("../img/weddingbanner2.png") no-repeat center center;
         background-size: cover;
-        height: 200px;
+        height: 300px;
+    }
+}
+@media(min-width: 0px) and (max-width: 1220px) {
+    .page-3 .content_wrapper {
+        padding: 0 25px;
+    }
+    .page-3 .preview-gallery {
+        padding: 80px 30px;
     }
 }
 .page-3 .cake-span {
@@ -68,5 +76,15 @@
 }
 .page-3 .wedding-looklike-box {
     align-self: flex-end;
+}
+@media (max-width: 700px) and (min-width: 0px) {
+    .page-3 .preview-visible {
+        width: 100%;
+        height: auto;
+    }
+    .page-3 .preview-invisible {
+        width: 100%;
+        height: auto;
+    }
 }
 

@@ -44,6 +44,7 @@ body {
     font-family: 'Pacifico', cursive;
     text-align: center;
     text-align: -webkit-center;
+    text-shadow: 1px 1px 2px yellow;
 }
 .logo p {
     display: block;
@@ -183,7 +184,7 @@ body {
     width: 1100px;
     margin: 0 auto;
 }
-@media(min-width: 0px) and (max-width: 1180px) {
+@media(min-width: 0px) and (max-width: 1220px) {
     .content_wrapper {
         width: auto;
     }
@@ -277,8 +278,8 @@ body {
 }
 .logo-down {
     position: absolute;
-    top: 20%;
-    left: 25%;
+    top: 15%;
+    left: 20%;
     text-align: center;
     font-size: 28px;
 }
@@ -291,11 +292,10 @@ body {
 }
 .logo-down .logo-abbreviation {
     font-family: 'Chicle', cursive;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     margin-bottom: 20px;
 }
 .logo-description {
-    1font-family: 'Charmonman', cursive;
     font-family: 'Raleway', sans-serif;
     color: #808080;
     font-size: 1.5vw;
@@ -321,39 +321,39 @@ body {
     .logo-name {
         font-size: 4vw;
     }
-    .logo-abbreviation {
+    .logo-down .logo-abbreviation {
         font-size: 2vw;
     }
     .logo-description {
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
 }
-@media(min-width: 0px) and (max-width: 1000px) {
+@media(min-width: 0px) and (max-width: 1100px) {
     .logo-down {
         left: 5%;
     }
     .logo-name {
         font-size: 4vw;
     }
-    .logo-abbreviation {
+    .logo-down .logo-abbreviation {
         font-size: 2.5vw;
     }
     .logo-description {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 }
-@media(min-width: 0px) and (max-width: 320px) {
+@media(min-width: 0px) and (max-width: 700px) {
     .logo-down {
         left: 5%;
     }
     .logo-name {
-        font-size: 14px;
+        font-size: 4vw;
     }
-    .logo-abbreviation {
-        font-size: 12px;
+    .logo-down .logo-abbreviation {
+        font-size: 2.5vw;
     }
     .logo-description {
-        font-size: 10px;
+        font-size: 2.3vw;
     }
 }
 .about {
@@ -478,7 +478,12 @@ body {
     color: #fff;
 }
 .location {
+    width: 100%;
     margin-bottom: 80px;
+    text-align: center;
+}
+.page-1 .location a:hover {
+    text-shadow: 1px 1px 2px black, 0 0 1em rebeccapurple;
 }
 .location h2 {
     margin: 0;
@@ -555,6 +560,9 @@ body {
 .page-1 .candybar-link {
     text-decoration: none;
     color: #c5a47e;
+    font-size: 2vw;
+    margin: 50px 0;
+    padding: 0 25px;
 }
 .page-1 .candybar-link:hover {
     color: #4b0082;
@@ -632,7 +640,7 @@ figure:hover .preview-invisible {
     display: flex;
     justify-content: space-between;
 }
-@media(min-width: 0px) and (max-width: 1200px) {
+@media(min-width: 0px) and (max-width: 1220px) {
     .footer-wrapper {
         width: auto;
     }

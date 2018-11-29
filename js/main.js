@@ -4,7 +4,7 @@ var mobSideMenu = document.querySelector(".mob-side-menu");
 var mobMenuHiddenBtn = document.querySelector(".mob-menu-close");
 var sideMenuLiBtn = document.getElementById("sideMenuLi");
 var insideMenu = document.querySelector(".inside-menu");
-var startPage = document.querySelector(".page-1");
+var startPage = document.querySelector("body"); //body
 
 navMobBtn.addEventListener("click", function () {
     navMob();

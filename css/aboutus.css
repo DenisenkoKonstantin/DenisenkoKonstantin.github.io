@@ -13,3 +13,11 @@
         height: 200px;
     }
 }
+.page-7 .content {
+    margin-bottom: 50px;
+}
+@media(min-width: 0px) and (max-width: 1220px) {
+    .page-7 .content {
+        padding: 0 25px;
+    }
+}

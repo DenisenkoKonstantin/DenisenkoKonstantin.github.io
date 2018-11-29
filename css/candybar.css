@@ -1,3 +1,17 @@
+.page-5 .first-img {
+    display: block;
+    background: url("../img/menu.png") center center;
+    background-size: cover;
+    width: auto;
+    height: 300px;
+}
+@media(min-width: 0px) and (max-width: 960px) {
+    .page-5 .first-img {
+        background: url("../img/menu.png") center center;
+        width: auto;
+        height: 200px;
+    }
+}
 .page-5 .cake-span {
     color: #c5a47e;
 }
@@ -18,4 +32,17 @@
 }
 .page-5 .preview-invisible {
     height: auto;
+}
+@media (max-width: 700px) and (min-width: 0px) {
+    .page-5 .preview-visible {
+        width: 100%;
+        height: auto;
+    }
+    .page-5 .preview-invisible {
+        width: 100%;
+        height: auto;
+    }
+    .page-5 .content_wrapper {
+        padding: 0 25px;
+    }
 }

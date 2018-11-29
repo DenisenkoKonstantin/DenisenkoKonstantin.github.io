@@ -1,21 +1,78 @@
-.page-5 .cake-span {
-    color: #c5a47e;
+.page-5 .first-img {
+    display: block;
+    background: url("../img/contact.png") center center;
+    background-size: cover;
+    width: auto;
+    height: 300px;
 }
-.page-5 .wedding-span {
-    color: #c5a47e;
+@media(min-width: 0px) and (max-width: 960px) {
+    .page-5 .first-img {
+        background: url("../img/contact.png") center center;
+        width: auto;
+        height: 200px;
+    }
 }
-.page-5 .custom-span {
-    color: #c5a47e;
+.page-5 .title {
+    text-align: center;
+    padding: 50px 0;
 }
-.page-5 .candybar-span {
-    color: #444444;
+.page-5 .title h2 {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
 }
-.page-5 .myworks-figure {
-    align-self: flex-end
+.wrap-form {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-around;
 }
-.page-5 .preview-visible {
-    height: auto;
+.form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
 }
-.page-5 .preview-invisible {
-    height: auto;
+.form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #f7f7f7;
+    outline: 0;
+    border: solid 1px #d3d3d3;
+}
+.form textarea {
+    min-height: 220px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #f7f7f7;
+    resize: vertical;
+    outline: 0;
+    border: solid 1px #d3d3d3;
+}
+.btn-form {
+    background: #c5a37f;
+    border: none;
+    padding: 15px 0;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.btn-form:hover {
+    cursor: pointer;
+    background: #464646;
+}
+.form-photo {
+    width: 30%;
+    max-height: 421px;
+}
+.wrap-contact {
+    display: inline-block;
+}
+.my-contact a {
+    display: block;
+    margin-bottom: 10px;
+    color: goldenrod;
+    text-decoration: underline;
+}
+.my-contact a:hover {
+    color: #464646;
 }
