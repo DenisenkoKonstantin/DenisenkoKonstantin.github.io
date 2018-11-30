@@ -34,13 +34,8 @@
 .page-5 .preview-invisible {
     height: auto;
 }
-@media (max-width: 700px) and (min-width: 0px) {
-    .page-5 .preview-visible {
-        width: 100%;
-        height: auto;
-    }
-    .page-5 .preview-invisible {
-        width: 100%;
-        height: auto;
-    }
+.page-5 .myworks-figure {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 20px;
 }

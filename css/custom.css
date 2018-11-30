@@ -36,22 +36,7 @@
     border-bottom: 1px solid #eaeaea;
 }
 .page-4 .myworks-figure {
-    -ms-flex-item-align: end;
-    align-self: flex-end
-}
-.page-4 .preview-visible {
-    height: auto;
-}
-.page-4 .preview-invisible {
-    height: auto;
-}
-@media (max-width: 700px) and (min-width: 0px) {
-    .page-4 .preview-visible {
-        width: 100%;
-        height: auto;
-    }
-    .page-4 .preview-invisible {
-        width: 100%;
-        height: auto;
-    }
+    width: 350px;
+    height: 350px;
+    margin-bottom: 20px;
 }

@@ -68,6 +68,7 @@
 .page-3 .candybar-link {
     text-decoration: none;
     color: #c5a47e;
+    font-size: inherit;
 }
 .page-3 .candybar-link:hover {
     color: #4b0082;
