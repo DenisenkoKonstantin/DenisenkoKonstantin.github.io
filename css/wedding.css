@@ -36,14 +36,11 @@
     color: #444444;
 }
 .page-3 .myworks-figure {
-    -ms-flex-item-align: end;
-    align-self: flex-end
-}
-.page-3 .preview-visible {
-    height: auto;
-}
-.page-3 .preview-invisible {
-    height: auto;
+    width: 350px;
+    height: 350px;
+    margin-bottom: 20px;
+    background: url("../img/wedding/1.jpg") 50% 50% no-repeat;
+    background-size: cover;
 }
 .page-3 .page2-menu {
     margin-bottom: 50px;
@@ -87,15 +84,5 @@
 .page-3 .wedding-looklike-box {
     -ms-flex-item-align: end;
     align-self: flex-end;
-}
-@media (max-width: 700px) and (min-width: 0px) {
-    .page-3 .preview-visible {
-        width: 100%;
-        height: auto;
-    }
-    .page-3 .preview-invisible {
-        width: 100%;
-        height: auto;
-    }
 }
 
