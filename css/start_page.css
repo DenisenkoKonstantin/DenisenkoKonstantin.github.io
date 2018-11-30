@@ -3,6 +3,9 @@ body {
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
 }
+.top-bar {
+    padding: 5px 50px 5px 0;
+}
 .main {
     min-width: 320px;
 }
@@ -20,9 +23,9 @@ body {
     padding: 10px 30px;
     background: #ffffff;
 }
-@media(min-width: 0px) and (max-width: 1170px) {
+@media(min-width: 0px) and (max-width: 1023px) {
     .header {
-        width: auto;
+        padding: 20px 30px;
     }
 }
 .flex_wrapper {
@@ -39,12 +42,20 @@ body {
 .logo {
     display: block;
     cursor: pointer;
-    margin-right: 25px;
     font-size: 26px;
     font-family: 'Pacifico', cursive;
-    text-align: center;
     text-align: -webkit-center;
-    text-shadow: 1px 1px 2px yellow;
+    text-decoration: none;
+    color: black;
+    padding: 10px 35px;
+    border-radius: 50%;
+    text-shadow: 1px 1px 3px orange;
+    -webkit-box-shadow: 0 0 27px rebeccapurple inset;
+    box-shadow: 0 0 27px rebeccapurple inset;
+}
+.logo:hover {
+    -webkit-box-shadow: 0 0 27px red inset;
+    box-shadow: 0 0 27px red inset;
 }
 .logo p {
     display: block;
@@ -64,7 +75,7 @@ body {
     align-items: center;
 
 }
-@media(min-width: 0px) and (max-width: 1020px) {
+@media(min-width: 0px) and (max-width: 1023px) {
     .wrap-navigation {
         display: none;
     }
@@ -112,6 +123,8 @@ body {
     border-width: 1px 1px 0 1px;
     font-size: 14px;
     opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
     transition: opacity 0.5s ease-in-out;
 }
 .header-nav-menu:hover .header-nav-inside{
@@ -171,15 +184,6 @@ body {
 .instagram:hover {
     background: url("../img/favicon/link-instagram-hover.jpg") no-repeat 4px 4px;
 }
-.search {
-    display: block;
-    width: 25px;
-    height: 25px;
-    background: url("../img/favicon/link-search.jpg") no-repeat 3px 4px;
-}
-.search:hover {
-    background: url("../img/favicon/link-search-hover.jpg") no-repeat 3px 4px;
-}
 .content_wrapper {
     width: 1100px;
     margin: 0 auto;
@@ -187,16 +191,16 @@ body {
 @media(min-width: 0px) and (max-width: 1220px) {
     .content_wrapper {
         width: auto;
-        padding: 0 25px;
     }
 }
 .nav-mob {
-    margin-top: 7px;
+    display: none;
+    margin: 23px 20px 0 0;
     height: 21px;
 }
-@media(min-width: 1020px) and (max-width: 1920px) {
+@media(min-width: 0px) and (max-width: 1023px) {
     .nav-mob {
-        display: none;
+        display: block;
     }
 }
 .nav-mob span {
@@ -208,54 +212,6 @@ body {
 }
 .nav-mob:hover {
     cursor: pointer;
-}
-.header-search {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -999;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
-    transition: all 0.25s ease-in-out;
-}
-.show-header-form {
-    opacity: 1;
-    z-index: 2;
-}
-.header-form {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.header-form input {
-    height: 100%;
-    width: 100%;
-    outline: 0;
-    border: 0;
-    font-size: 28px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #a9a9a9;
-    padding: 0;
-}
-.header-span-close {
-    text-indent: -999999px;
-    position: absolute;
-    right: 0;
-    top: 30%;
-    width: 16px;
-    height: 16px;
-    background: url("../img/favicon/fa-form-close.png") no-repeat;
-    transition: all 0.15s ease-in-out;
-}
-.header-span-close:hover {
-    background: url("../img/favicon/fa-form-close-active.png") no-repeat;
-    cursor: pointer;
-}
-.header-form-btn {
-    display: none;
 }
 .first-img {
     position: relative;
@@ -384,7 +340,6 @@ body {
 }
 .custom_cakes {
     background: #f5f5f5;
-    margin-bottom: 80px;
 }
 .custom_cakes_wrapper {
     width: 1300px;
@@ -414,7 +369,7 @@ body {
 .custom_text {
     padding: 0 20px 0 0;
 }
-@media(min-width: 0px) and (max-width: 950px) {
+@media(min-width: 0px) and (max-width: 1023px) {
     .custom_wrapper {
         display: block;
     }
@@ -479,67 +434,25 @@ body {
     color: #fff;
 }
 .location {
-    width: 100%;
-    margin-bottom: 80px;
     text-align: center;
-}
-.page-1 .location a:hover {
-    text-shadow: 1px 1px 2px black, 0 0 1em rebeccapurple;
+    padding: 100px 25px;
+    -webkit-box-shadow: 0 0 180px rebeccapurple inset;
+    box-shadow: 0 0 180px rebeccapurple inset;
+    border-radius: 10px;
 }
 .location h2 {
-    margin: 0;
-    text-align: center;
-    font-size: 32px;
-}
-.location p {
-    margin: 0 0 25px 0;
-    text-align: center;
-    font-size: 24px;
-}
-.location_wrapper {
-    padding: 0 80px;
-}
-@media(min-width: 700px) and (max-width: 950px) {
-    .location_wrapper {
-        padding: 0 100px;
-    }
-}
-@media(min-width: 0px) and (max-width: 750px) {
-    .location_wrapper {
-        padding: 0 50px;
-        display: block;
-    }
-}
-.location_str img {
     display: inline-block;
-    border-radius: 50%;
-    cursor: pointer;
+    font-size: 34px;
+    margin: 0 20px 0 0;
 }
-.location_str {
-    text-align: center;
-    padding: 0 20px;
-}
-@media(min-width: 0px) and (max-width: 750px) {
-    .location_str {
-        margin-bottom: 50px;
-    }
-}
-.location_str img {
-    margin-bottom: 20px;
-}
-.location_str strong {
-    display: block;
-    margin-bottom: 20px;
-    font-size: 18px;
-}
-.location_str p {
-    margin: 0 0 20px 0;
-}
-.location_str a {
+.location a {
+    display: inline-block;
+    width: 248px;
     text-decoration: none;
-    font-family: 'Cormorant Infant', serif;
-    font-size: 22px;
-    color: #daa520;
+    font-size: 28px;
+}
+.location a:hover {
+    text-shadow: 0 0 0, 0 0 1em red;
 }
 .about-myself {
     background: #f5f5f5;
@@ -558,41 +471,32 @@ body {
 .about-myself-img img {
     padding-right: 20px;
 }
-.page-1 .candybar-link {
+.howOrder {
+    text-align: center;
+    padding: 30px 25px;
+    -webkit-box-shadow: 0 0 55px rebeccapurple inset;
+    box-shadow: 0 0 55px rebeccapurple inset;
+    border-radius: 10px;
+}
+.candybar-link {
     text-decoration: none;
     color: #c5a47e;
     font-size: 2vw;
     margin: 50px 0;
     padding: 0 25px;
 }
-.page-1 .candybar-link:hover {
-    color: #4b0082;
+.candybar-link:hover {
+    color: red;
 }
 .preview-gallery {
     padding: 80px 0 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
-}
-.preview-gallery figure {
-    margin: 0 70px;
-}
-@media(min-width: 0px) and (max-width: 1600px) {
-    .preview-gallery figure {
-        margin: 0;
-    }
-    .figure8 {
-        display: none;
-    }
-    .figure7 {
-        display: none;
-    }
-    .figure6 {
-        display: none;
-    }
-    .figure5 {
-        display: none;
-    }
 }
 @media(min-width: 880px) and (max-width: 1100px) {
     .preview-gallery {
@@ -638,7 +542,11 @@ figure:hover .preview-invisible {
 .footer-wrapper {
     width: 1200px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 @media(min-width: 0px) and (max-width: 1220px) {
@@ -646,7 +554,7 @@ figure:hover .preview-invisible {
         width: auto;
     }
 }
-@media(min-width: 0px) and (max-width: 1100px) {
+@media(min-width: 0px) and (max-width: 1023px) {
     .footer-wrapper {
         display: block;
         text-align: center;
@@ -738,7 +646,10 @@ figure:hover .preview-invisible {
     color: #00bfff;
 }
 .footer-instagram-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 350px;
     margin: 0;
@@ -763,14 +674,20 @@ figure:hover .preview-invisible {
     height: 100%;
     top: 0;
     left: 0;
+    z-index: 2;
     background: rgb(42, 42, 42);;
     opacity: 0.7;
+    -webkit-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
     transition: all 0.30s ease-in-out;
 }
 .mob-side-menu {
     position: fixed;
     top: 0;
     right: -340px;
+    z-index: 3;
+    -webkit-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
     transition: all 0.30s ease-in-out;
     width: auto;
     height: 100%;
@@ -788,6 +705,8 @@ figure:hover .preview-invisible {
     padding: 17px 20px;
     text-decoration: none;
     color: inherit;
+    -webkit-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
     transition: all 0.15s ease-in-out;
 }
 .mob-menu-hidden a:hover {
@@ -805,6 +724,8 @@ figure:hover .preview-invisible {
     padding: 17px 20px;
     text-decoration: none;
     color: inherit;
+    -webkit-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
     transition: all 0.15s ease-in-out;
 }
 .side-menu-a:hover {
@@ -819,6 +740,8 @@ figure:hover .preview-invisible {
     height: 11px;
     margin-left: 225px;
     background: url("../img/favicon/fa-side-arrow.png") no-repeat;
+    -webkit-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
     transition: all 0.15s ease-in-out;
 }
 .fa-side-arrow:hover span {
@@ -841,6 +764,8 @@ figure:hover .preview-invisible {
 .inside-menu {
     height: 0;
     overflow: hidden;
+    -webkit-transition: height 0.15s ease-in-out;
+    -o-transition: height 0.15s ease-in-out;
     transition: height 0.15s ease-in-out;
     background: rgba(255,255,255,0.02);
 }
@@ -872,6 +797,8 @@ figure:hover .preview-invisible {
     border-color: rgba(255,255,255,0.2);
     border-bottom-width: 1px;
     border-style: solid;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
     color: inherit;
     font-size: 16px;

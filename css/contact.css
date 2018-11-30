@@ -23,13 +23,21 @@
     font-weight: normal;
 }
 .wrap-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 50px;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 .form {
     width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin-right: 50px;
 }
@@ -76,3 +84,15 @@
 .my-contact a:hover {
     color: #464646;
 }
+@media(min-width: 0px) and (max-width: 1220px) {
+    .page-5 .wrapper-form {
+        padding: 0 25px;
+    }
+}
+@media(min-width: 0px) and (max-width: 1023px) {
+    .page-5 .wrap-contact{
+        display: block;
+        text-align: center;
+    }
+}
+

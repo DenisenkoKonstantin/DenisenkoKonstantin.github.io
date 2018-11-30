@@ -25,6 +25,7 @@
     color: #444444;
 }
 .page-5 .myworks-figure {
+    -ms-flex-item-align: end;
     align-self: flex-end
 }
 .page-5 .preview-visible {

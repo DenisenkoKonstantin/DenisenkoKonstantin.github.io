@@ -1,3 +1,15 @@
+
+.page-3 .myworks {
+    padding: 0;
+}
+@media(min-width: 0px) and (max-width: 1220px) {
+    .page-3 .content_wrapper {
+        padding: 0 25px;
+    }
+    .page-3 .header {
+        padding: 10px 30px;
+    }
+}
 .page-3 .first-img {
     position: relative;
     background: url("../img/weddingbanner.png") no-repeat center center;
@@ -24,6 +36,7 @@
     color: #444444;
 }
 .page-3 .myworks-figure {
+    -ms-flex-item-align: end;
     align-self: flex-end
 }
 .page-3 .preview-visible {
@@ -72,6 +85,7 @@
     padding: 0;
 }
 .page-3 .wedding-looklike-box {
+    -ms-flex-item-align: end;
     align-self: flex-end;
 }
 @media (max-width: 700px) and (min-width: 0px) {
