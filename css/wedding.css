@@ -1,21 +1,66 @@
-
-.page-3 .myworks {
-    padding: 0;
-}
-@media(min-width: 0px) and (max-width: 1220px) {
-    .page-3 .content_wrapper {
-        padding: 0 25px;
-    }
-    .page-3 .header {
-        padding: 10px 30px;
-    }
-}
 .page-3 .first-img {
     position: relative;
     background: url("../img/weddingbanner.png") no-repeat center center;
     background-size: cover;
     width: auto;
     height: 420px;
+}
+.page-3 .cake-span {
+    color: #c5a47e;
+}
+.page-3 .wedding-span {
+    color: #444444;
+}
+.wedding-description {
+    margin-bottom: 50px;
+    padding: 0 25px;
+}
+.wedding-description h2 {
+    margin: 0 0 25px 0;
+}
+.wedding-description p {
+    margin: 0;
+}
+.wedding-price {
+    padding: 50px 25px;
+}
+.wedding-price-headline {
+    margin: 0 0 25px 0;
+}
+.wedding-price-p {
+    margin: 0 0 50px 0;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #eaeaea;
+}
+.ready-order {
+    padding: 0 25px;
+}
+.wedding-price-p2 {
+    margin-bottom: 50px;
+}
+.wedding-price {
+    background: #f5f5f5;
+}
+.wedding-looklike {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.wedding-looklike-box {
+    align-self: flex-end;
+}
+.wedding-cake-price {
+    display: block;
+}
+
+@media(min-width: 0px) and (max-width: 960px) {
+    .wedding-looklike {
+        flex-direction: column;
+    }
+    .wedding-looklike-box {
+        align-self: center;
+        margin-bottom: 25px;
+    }
 }
 @media(min-width: 0px) and (max-width: 960px) {
     .page-3 .first-img {
@@ -24,66 +69,3 @@
         height: 300px;
     }
 }
-@media(min-width: 0px) and (max-width: 1220px) {
-    .page-3 .preview-gallery {
-        padding: 80px 30px;
-    }
-}
-.page-3 .cake-span {
-    color: #c5a47e;
-}
-.page-3 .wedding-span {
-    color: #444444;
-}
-.page-3 .myworks-figure {
-    width: 350px;
-    height: 350px;
-    margin-bottom: 20px;
-    background: url("../img/wedding/1.jpg") 50% 50% no-repeat;
-    background-size: cover;
-}
-.page-3 .page2-menu {
-    margin-bottom: 50px;
-}
-.page-3 .wedding-description {
-    margin-bottom: 50px;
-}
-.page-3 .wedding-description h2 {
-    margin: 0 0 25px 0;
-}
-.page-3 .wedding-description p {
-    margin: 0;
-}
-.page-3 .wedding-price {
-    padding: 50px 0;
-}
-.page-3 .wedding-price-headline {
-    margin: 0 0 25px 0;
-}
-.page-3 .wedding-price-p {
-    margin: 0 0 50px 0;
-    padding-bottom: 80px;
-    border-bottom: 1px solid #eaeaea;
-}
-.page-3 .candybar-link {
-    text-decoration: none;
-    color: #c5a47e;
-    font-size: inherit;
-}
-.page-3 .candybar-link:hover {
-    color: #4b0082;
-}
-.wedding-price-p2 {
-    margin-bottom: 50px;
-}
-.page-3 .wedding-price {
-    background: #f5f5f5;
-}
-.page-3 .wedding-looklike {
-    padding: 0;
-}
-.page-3 .wedding-looklike-box {
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-}
-

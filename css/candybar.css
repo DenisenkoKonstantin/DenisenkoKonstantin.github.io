@@ -24,18 +24,7 @@
 .page-5 .candybar-span {
     color: #444444;
 }
-.page-5 .myworks-figure {
-    -ms-flex-item-align: end;
-    align-self: flex-end
-}
-.page-5 .preview-visible {
-    height: auto;
-}
-.page-5 .preview-invisible {
-    height: auto;
-}
-.page-5 .myworks-figure {
-    width: 350px;
-    height: 350px;
-    margin-bottom: 20px;
+.page-5 .myworks-p {
+    padding: 0 25px 50px 25px;
+    margin-bottom: 50px;
 }

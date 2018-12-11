@@ -1,3 +1,20 @@
+.top-bar {
+    border-bottom: 2px solid #eaeaea;
+    text-align: right;
+}
+.top-bar a {
+    text-decoration: none;
+    color: #000000;
+
+}
+.top-bar a:hover {
+    color: #c5a47e;
+}
+.fa-tel-header {
+    margin-right: 30px;
+    padding-left: 20px;
+    background: url("../img/favicon/fa-tel-header.png") no-repeat center left;
+}
 .page-4 .first-img {
     display: block;
     background: url("../img/menu.png") center center;
@@ -12,12 +29,36 @@
         height: 200px;
     }
 }
-.page-4 .candybar-link {
-    font-size: inherit;
-    margin: 0;
-    padding: 0;
+.menu-big {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 25px;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 50px;
 }
-
+.menu-big a {
+    text-decoration: none;
+}
+.menu-big img {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 20px 0;
+}
+.custom-jpg {
+    border-radius: 40%;
+}
+.menu-big-center {
+    text-align: center;
+    cursor: pointer;
+    margin: 0 25px;
+}
+.menu-big-center span {
+    text-align: center;
+    display: block;
+    font-weight: 600;
+    color: #c5a47e;
+}
 .page-4 .cake-span {
     color: #c5a47e;
 }
@@ -27,16 +68,112 @@
 .page-4 .custom-span {
     color: #444444;
 }
+.page-4 .myworks {
+    padding: 0 25px;
+}
 .myworks-img {
+    text-align: center;
     margin-bottom: 50px;
 }
 .myworks-p {
-    margin: 0 0 50px 0;
-    padding-bottom: 80px;
+    text-align: center;
+    padding: 0 0 50px 0;
     border-bottom: 1px solid #eaeaea;
 }
-.page-4 .myworks-figure {
+.candybar-link {
+    text-decoration: none;
+    color: #c5a47e;
+}
+.candybar-link:hover {
+    color: #4b0082;
+    font-weight: bold;
+}
+.myworks-photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+.myworks-figure {
+    cursor: pointer;
     width: 350px;
     height: 350px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+.myworks-figure:hover {
+    opacity: .8;
+}
+
+.gallery-full-size {
+    position: fixed;
+    opacity: 0;
+    z-index: -5;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    border: 1px solid #9370db;
+    box-shadow: 0 0 27px #663399 inset;
+    border-radius: 5px;
+    background: #ffffff;
+    transition: all 1s;
+}
+.wrap-gallery {
+    position: relative;
+    1width: 480px;
+    1height: 640px;
+    overflow: hidden;
+    transition: all 1s;
+}
+.btn-preview {
+    position: absolute;
+    z-index: 8;
+    background-color: rgba(250, 250, 250, 0.5);
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #9370db;
+    box-shadow: 0 0 10px #663399 inset;
+}
+.btn-preview:hover {
+    background-color: rgba(250, 250, 250, 0.9);
+    border: 1px solid #ff0000;
+    box-shadow: 0 0 10px #ff0000 inset;
+}
+.btn-back {
+    bottom: 30px;
+    left: 30px;
+}
+.btn-next {
+    bottom: 30px;
+    right: 30px;
+}
+.btn-close {
+    top: 30px;
+    right: 30px;
+}
+.preview {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 7;
+    opacity: 0;
+    transition: all 1s;
+}
+.active {
+    opacity: 1;
+    z-index: 7;
+}
+
+@media(min-width: 0px) and (max-width: 700px) {
+    .menu-big {
+        display: block;
+    }
+    .menu-big a {
+        margin-bottom: 25px;
+    }
 }
